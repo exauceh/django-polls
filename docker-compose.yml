@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  django_polls:
+    build:
+      context: .
+    ports:
+      - "8080:8000"
+    volumes:
+      - .:/app
+
