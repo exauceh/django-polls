@@ -33,7 +33,7 @@ jobs:
           pip install flake8
 
       - name: Run Flake8
-        run: flake8 src/ --max-line-length=120
+        run: flake8 polls/ --max-line-length=120
 
   test:
     runs-on: ubuntu-latest
@@ -52,7 +52,7 @@ jobs:
           pip install nose
 
       - name: Run tests with nose
-        run: nosetests test/
+        run: nosetests polls/tests.py
 
   docker:
     runs-on: ubuntu-latest
